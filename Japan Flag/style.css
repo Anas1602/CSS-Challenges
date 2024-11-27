@@ -1,0 +1,21 @@
+:root{
+  --flag-height: 200px;
+  --red: #bc022c;
+}
+
+.rec{
+  width: calc(var(--flag-height) * 3/2);
+  height: var(--flag-height);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  box-shadow: 5px 5px 10px rgb(194, 194, 194);
+}
+
+.circle{
+  width: calc(var(--flag-height) * .6);
+  height: calc(var(--flag-height) * .6);
+  border-radius: 50%;
+  background: var(--red);
+}

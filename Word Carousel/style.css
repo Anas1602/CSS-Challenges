@@ -1,0 +1,48 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg-word: #5134ff
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1:after {
+  content: "";
+  animation: swap infinite 6s;
+  background: var(--bg-word);
+  border-radius: 5px;
+  margin-left: 5px;
+  padding: 10px;
+  color: white;
+}
+
+@keyframes swap {
+  0% {
+    content: "Boxing"
+  }
+
+  25% {
+    content: "Coding"
+  }
+
+  50% {
+    content: "Trading";
+  }
+
+  75% {
+    content: "Reading";
+  }
+
+  100% {
+    content: "Boxing";
+  }
+}

@@ -1,0 +1,39 @@
+/* My Solution */
+.container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.square{
+  height: 300px;
+  width: 300px;
+  background: red;
+  position: relative;
+}
+
+.rec{
+  height: 60%;
+  width: 22%;
+  background: white;
+  
+  left: 50px;
+}
+
+.rec-vertical {
+  
+  position: absolute;
+  left: 39%;
+  top: 20%;
+}
+
+.rec-horizental{
+  
+  position: absolute;
+  left: 39%;
+  top: 20%;
+  rotate: 90deg;
+}
+

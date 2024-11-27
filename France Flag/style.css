@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: #2c2929;
+}
+
+.rec {
+  height: 300px;
+  width: 200px;
+  margin: 0;
+}
+
+.rec-1 {
+  background: blue;
+}
+
+.rec-2 {
+  background: white;
+}
+
+.rec-3 {
+  background: red;
+}

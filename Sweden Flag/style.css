@@ -1,0 +1,35 @@
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  
+}
+
+.blue{
+  height: 200px;
+  width: 320px;
+  background: blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 5px 5px 10px rgb(182, 182, 182) ;
+}
+
+.band{
+  background: yellow;
+}
+
+.vertical{
+  width: 40px;
+  height: 200px;
+  position: absolute;
+  left: 100px;
+}
+
+.horizental{
+  width: 320px;
+  height: 40px;
+}
+
