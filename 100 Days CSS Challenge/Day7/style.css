@@ -46,7 +46,7 @@
 .panel .header{
   height: 60px;
   width: 100%;
-  background-color: var(--blue-dark);
+  background-color: var(--blue);
 }
 
 .panel .header .menu-icon{
@@ -124,4 +124,135 @@
 
 .panel .header .search-input:focus{
   outline: none;
+}
+.panel .header .search-input.active{
+transform: translateX(0);
+opacity: 1;
+pointer-events: all;
+}
+.panel .header .search-icon{
+  position: absolute;
+  z-index: 2;
+  font-size: 21px;
+  color: var(--blue-light);
+  top: 18px;
+  right: 20px;
+  transition: all .3s ease;
+  cursor: pointer;
+}
+.panel .header .search-icon:hover{
+  color: white;
+}
+.panel .notifications{
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+.panel .notifications .line{
+  position: absolute;
+  top: 0;
+  left: 27px;
+  bottom: 0;
+  width: 3px;
+  background-color: #ebebeb;
+}
+.panel .notifications .notification{
+  /* position: absolute; */
+  z-index: 2;
+  margin: 25px 20px 25px 43px;
+}
+.panel .notifications .notification:nth-child(2),
+.panel .notifications .notification:nth-child(3),
+.panel .notifications .notification:nth-child(4) {
+  animation: here .5s ease-out forwards;
+}
+.panel .notifications .notification:hover{
+  color: var(--blue);
+  cursor: pointer;
+}
+.panel .notifications .notification .circle{
+  box-sizing: border-box;
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  background-color: #fff;
+  border: 2px solid var(--blue);
+  box-shadow: 0 0 0 3px white;
+  border-radius: 6px;
+  top: 0;
+  left: -20px;
+}
+.panel .notifications .notification .time{
+  display: block;
+  font-size: 11px;
+  line-height: 11px;
+  margin-bottom: 2px;
+}
+.panel .notifications .notification p{
+  font-size: 15px;
+  line-height: 20px;
+  margin: 0;
+}
+.panel .notifications .notification p b{
+  font-weight: 600;
+}
+.menu{
+  position: absolute;
+  width: 170px;
+  height: 270px;
+  top: 65px;
+  left: 50px;
+  background-color: #43627d;
+  border-radius: 3px;
+  transition: all .5s ease-in-out;
+  transform: translate3d(20px, 0, 0);
+}
+
+.menue.active{
+  box-shadow: 5px 5px 8px 0 rgba(0, 0, 0, 0.2);
+  transform: translate3d(0,0,0);
+}
+
+.menu ul{
+  margin: 0;
+  padding: 10px 0;
+}
+
+.menu li{
+  color: #93b2cd;
+  margin: 0;
+  padding: 18px 17px;
+  list-style: none;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+
+.menu li:hover{
+  color: white;
+  background: #385269;
+}
+
+.menu li i{
+  display: block;
+  float: left;
+  margin-right: 8px;
+  margin-top: -1px;
+}
+
+.menu li .bxs-user,
+.menu li .bxs-cog,
+.menu li .bxs-bell{
+  margin-top: 0;
+}
+
+@keyframes here {
+  from{
+    transform: translate3d(0, 50px, 0);
+    opacity: 0;
+  }
+  to{
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
 }
